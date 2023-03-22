@@ -23,3 +23,19 @@
     margin: 6rem;
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .content {
+    .bg-blue {
+      .info-margin {
+        margin: 1rem 1rem 2rem 2rem;
+      }
+    }
+  }
+
+  .container {
+    .footer {
+      margin: 2rem;
+    }
+  }
+}

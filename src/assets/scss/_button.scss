@@ -137,12 +137,13 @@ a {
 }
 .btn--primary {
   border-radius: 0 !important;
-  background: $white;
-  color: $dark-blue;
+  background: $dark-blue;
+  color: $white;
 }
 .btn--secondary {
+  border-radius: 0 !important;
   background: $white;
-  color: $white;
+  color: $dark-blue;
 }
 
 .txt-danger {
