@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.otf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.otf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.otf");
+}
+
+@mixin regular-font {
+  font-family: "Poppins-Regular" !important;
+}
+
+@mixin bold-font {
+  font-family: "Poppins-Bold" !important;
+}
+@mixin semi-bold-font {
+  font-family: "Poppins-SemiBold" !important;
+}

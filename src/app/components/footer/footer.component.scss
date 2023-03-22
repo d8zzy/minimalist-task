@@ -1,0 +1,25 @@
+@import "/src/styles.scss";
+
+.content {
+  color: #ffffff;
+  .bg-blue {
+    background-color: #2c3878;
+    .info-margin {
+      margin: 2rem 1rem 2rem 7rem;
+      span {
+        color: $light-grey !important;
+      }
+    }
+    .title {
+      @include semi-bold-font;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.container {
+  .footer {
+    margin: 6rem;
+  }
+}

@@ -1,0 +1,57 @@
+@import "/src/styles.scss";
+
+.content {
+  margin: 3.5rem;
+  .title {
+    @include bold-font;
+  }
+  .descr {
+    width: 25% !important;
+    margin: 2rem;
+  }
+  .body {
+    margin: 3.5rem;
+    .header {
+      .holder {
+        color: $darker-grey;
+      }
+      margin-top: 7rem;
+      .muted-text {
+        color: $dark-grey !important;
+      }
+      .footer-span {
+        margin-right: 9rem;
+      }
+    }
+    .image-fit {
+      width: 49%;
+    }
+    .spacer {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .content {
+    margin: 1rem;
+    .descr {
+      width: 100% !important;
+    }
+    .body {
+      margin: 0.5rem;
+      .header {
+        margin-top: 4rem;
+        .footer-span {
+          margin-right: 3rem;
+        }
+      }
+      .image-fit {
+        width: 50%;
+      }
+      .spacer {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
