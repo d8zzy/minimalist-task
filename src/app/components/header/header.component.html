@@ -1,46 +1,53 @@
-<header class="">
-  <nav
-    class="navbar navbar-expand-lg navbar-light mb-5 justify-content-between mt-4 ms-5"
-  >
-    <!-- <a class="navbar-brand m-5" href="#">Navbar</a> -->
-    <div class="d-flex justify-content-start">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/logo.svg" width="126px" height="54px" alt="logo" />
-      </a>
+<header>
+  <div class="desk-view d-flex align-items-center justify-content-between">
+    <div class="logo" routerLink="/">
+      <a href="#"
+        ><img src="/assets/logo.svg" width="126px" height="54px" alt="logo"
+      /></a>
     </div>
 
-    <div class="justify-content-end">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="menu d-flex align-items-center">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Services</a></li>
+        <li><a>Our Teams</a></li>
+      </ul>
+      <button mat-flat-button>Contact Us</button>
+    </div>
+  </div>
 
-      <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link ms-5 fs-6" href="#">Home</a>
-          </li>
-          <li class="nav-item ms-5 fs-6">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item ms-5 fs-6">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item ms-5 fs-6">
-            <a class="nav-link" href="#">Our Terms</a>
-          </li>
-        </ul>
-        <button mat-flat-button class="btn--primary ms-5" color="primary">
-          Contact Us
+  <div class="mb-res" #header [ngClass]="{ open: menu }">
+    <aside>
+      <div class="logo" routerLink="/">
+        <img src="/assets/logo.svg" width="126px" height="54px" alt="logo" />
+      </div>
+
+      <button mat-icon-button (click)="toggleMenu()">
+        <span class="d-flex"> <mat-icon>menu</mat-icon> </span>
+      </button>
+    </aside>
+
+    <nav class="nav-menu" [ngClass]="{ open: menu }">
+      <div class="d-flex align-items-center justify-content-between mb-5">
+        <div class="title">
+          <img src="/assets/logo.svg" width="126px" height="54px" alt="logo" />
+        </div>
+
+        <button mat-icon-button class="close-btn" (click)="toggleMenu()">
+          <mat-icon>close</mat-icon>
         </button>
       </div>
-    </div>
-  </nav>
+
+      <ul class="nav--links">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Services</a></li>
+        <li><a>Our Teams</a></li>
+      </ul>
+      <div class="nav--action mt-auto">
+        <button mat-flat-button>Contact Us</button>
+      </div>
+    </nav>
+  </div>
 </header>

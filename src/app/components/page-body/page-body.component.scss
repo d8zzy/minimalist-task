@@ -33,8 +33,12 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
+  .display-3 {
+    padding-top: 2em;
+  }
   .content {
     margin: 1rem;
+    margin-bottom: 3rem;
     .descr {
       width: 100% !important;
     }

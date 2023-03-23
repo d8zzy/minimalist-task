@@ -20,7 +20,35 @@
 
 .container {
   .footer {
-    margin: 6rem;
+    margin: 3rem;
+    .title {
+      @include semi-bold-font;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+  .footer--input {
+    margin: 6rem 1rem 5rem 6.5rem;
+    .item {
+      position: relative;
+      height: 14px;
+      width: 14px;
+      background-color: $darker-grey;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+  .links {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    background-color: $light-grey;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    .socials {
+      position: absolute !important;
+    }
   }
 }
 
@@ -35,6 +63,14 @@
 
   .container {
     .footer {
+      margin: 2rem;
+      .title {
+        @include semi-bold-font;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+    .footer--input {
       margin: 2rem;
     }
   }
